@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#SW-logo {
+    float:right;
+    padding-right: 70px;
+    padding-top: 5px;
+
+}
+.card-rey-img{
+    width:96%;
+    height:30%;
+
+}
+
+.card-yoda-img{
+    width:96%;
+    height:30%;
+
+}
+.card-duku-img {
+    width:96%;
+    height:30%;
+
+}
+.card-gen-img {
+    width:96%;
+    height:30%;
+
+}
+
+.row {
+    margin:2px;
+}
+
+
+
