@@ -3,18 +3,18 @@
     padding: 0;
 }
 
-.crystals_head {
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+
+.crystals_head{
     padding-left: 40%;
+    padding-top: 2%;
 }
    
-
-#wrapper{
-    background-color: pink;
-    width: 300px;
-    border: 2px solid green;
-    padding: 25px;
-    margin: 25px;
-}
 
 #rulebox {
     background-color: pink;
@@ -69,4 +69,40 @@
     margin: 25px;
 
 }
+
+.jewel{
+    height: 100px;
+     width: 100px;
+     
+}
+
+#gem_photo1{
+    width: 10%;
+    height: 10%;
+    border: 2px solid grey;
+    
+}
+#gem_photo2{
+    width: 10%;
+    height: 10%;
+    border: 2px solid grey;
+    
+}
+#gem_photo3{
+    width: 10%;
+    height: 10%;
+    border: 2px solid grey;
+    
+}
+#gem_photo4{
+    width: 10%;
+    height: 10%;
+    border: 2px solid grey;
+    
+}
+
+#gemBox {
+    float:left;
+}
+
 
