@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.crystals_head {
+    padding-left: 40%;
+}
+   
+
+#wrapper{
+    background-color: pink;
+    width: 300px;
+    border: 2px solid green;
+    padding: 25px;
+    margin: 25px;
+}
+
+#rulebox {
+    background-color: pink;
+    width: 300px;
+    border: 2px solid green;
+    padding: 25px;
+    margin: 25px;
+
+}
+#random_number{
+    background-color: pink;
+    width: 300px;
+    border: 2px solid green;
+    padding: 25px;
+    margin: 25px;
+
+
+}
+#wins_losses {
+    background-color: pink;
+    width: 300px;
+    border: 2px solid green;
+    padding: 25px;
+    margin: 25px;
+    
+}
+
+
+#space {
+    background-color: pink;
+    width: 300px;
+    border: 2px solid green;
+    padding: 25px;
+    margin: 25px;
+
+}
+
+#score {
+    background-color: pink;
+    width: 300px;
+    border: 2px solid green;
+    padding: 25px;
+    margin: 25px;
+
+}
+
+#space {
+    background-color: pink;
+    width: 300px;
+    border: 2px solid green;
+    padding: 25px;
+    margin: 25px;
+
+}
+
