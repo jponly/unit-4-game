@@ -104,5 +104,32 @@
 #gemBox {
     float:left;
 }
+#gems_gallery {
+    margin:5%;
+}
 
+#number-guess{
+    margin:5%;
+    width:10%;
+    height:30%;
 
+}
+
+#wins_losses{
+    margin:5%;
+}
+#space{
+    margin:11%;
+}
+#score{
+    margin:11%;
+}
+#rulebox{
+    margin:3%;
+}
+
+body{
+    background-image:url("../images/upfeathers.png");
+    background-size:cover;
+    
+}

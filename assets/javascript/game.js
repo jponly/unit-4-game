@@ -1,82 +1,106 @@
 $(document).ready(function () {
 
-    var randomNumber = Math.floor(Math.random() * 50);
-    console.log(randomNumber);
+    var random = Math.floor(Math.random() * 101 + 19)
 
-    var total_score = 0;
+    $('#random_number').text(random);
 
+
+    var num1 = Math.floor(Math.random() * 11 + 1)
+    var num2 = Math.floor(Math.random() * 11 + 1)
+    var num3 = Math.floor(Math.random() * 11 + 1)
+    var num4 = Math.floor(Math.random() * 11 + 1)
+
+
+    var userTotal = 0;
     var wins = 0;
-
     var losses = 0;
 
-    var button1 = Math.floor(Math.random() * 13);
-    console.log(button1)
+    $('#wins').text(wins);
+    $('#loss').text(losses);
 
-    var button2 = Math.floor(Math.random() * 13);
-    console.log(button2)
+    function reset() {
 
-    var button3 = Math.floor(Math.random() * 13);
-    console.log(button3)
+        Random = Math.floor(Math.random() * 101 + 19);
+        $('#randomNumber').text(Random);
+        num1 = Math.floor(Math.random() * 11 + 1);
+        num2 = Math.floor(Math.random() * 11 + 1);
+        num3 = Math.floor(Math.random() * 11 + 1);
+        num4 = Math.floor(Math.random() * 11 + 1);
 
-    var button4 = Math.floor(Math.random() * 13);
-    console.log(button4)
+        userTotal = 0;
+        $('#final_score').text(userTotal);
 
-    var reset = function () {
-        $("Wins").innerHTML = wins;
-        $("Losses").innerHTML = losses;
-        $("Score").innerHTML = total_score;
     }
 
-    $("#randomNumber").html(randomNumber);
-
-    $("#thumbnail_gem1").on("click", function () {
-
-        total_score += button1;
-
-
-        $("#score").html(total_score)
-
-    })
-
-    $("#thumbnail_gem2").on("click", function () {
-
-        total_score += button2;
-
-
-        $("#score").html(total_score)
-
-    })
-
-    $("#thumbnail_gem3").on("click", function () {
-
-        total_score += button3;
-
-
-        $("#score").html(total_score)
-
-    })
-    $("#thumbnail_gem4").on("click", function () {
-
-        total_score += button4;
-
-
-        $("#score").html(total_score)
-
-    })
-
-    if (total_score === randomNumber) {
+    function winner() {
+        alert("you won!");
         wins++;
-        alert("Congratulation! You collected the EXACT value! Let's play again!");
-        randomNumber = Math.floor(Math.random() * 50);
+        $('#wins').text(wins);
+        reset()
     }
-
-    if (total_score > randomNumber) {
+    function loser() {
+        alert("you lose!");
         losses++;
-        alert("Almost! Try again!");
-        randomNumber = Math.floor(Math.random() * 50);
+        $('#loss').text(losses);
+        reset()
     }
 
-    reset();
+    $('#thumbnail_gem1').on("click", function () {
+        userTotal = userTotal + num1;
+        $('final_score').text(userTotal);
+
+        if (userTotal == Random) {
+            winner();
+        }
+
+        else if (userTotal > Random) {
+            loser();
+        }
+
+    })
+    $('#thumbnail_gem2').on('click', function () {
+        userTotal = userTotal + num2;
+        $('#final_score').text(userTotal);
+        if (userTotal == Random) {
+            winner();
+        }
+        else if (userTotal > Random) {
+            loser();
+        }
+    })
+    $('#thumbnail_gem3').on('click', function () {
+        userTotal = userTotal + num3;
+        $('#final_score').text(userTotal);
+        if (userTotal == Random) {
+            winner();
+        }
+        else if (userTotal > Random) {
+            loser();
+        }
+    })
+    $('#thumbnail_gem4').on('click', function () {
+        userTotal = userTotal + num4;
+        $('#final_score').text(userTotal);
+        if (userTotal == Random) {
+            winner();
+        }
+        else if (userTotal > Random) {
+            loser();
+        }
+    })
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
