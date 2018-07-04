@@ -49,11 +49,11 @@ $(document).ready(function () {
         userTotal = userTotal + num1;
         $('final_score').text(userTotal);
 
-        if (userTotal == Random) {
+        if (userTotal == random) {
             winner();
         }
 
-        else if (userTotal > Random) {
+        else if (userTotal > random) {
             loser();
         }
 
@@ -61,30 +61,33 @@ $(document).ready(function () {
     $('#thumbnail_gem2').on('click', function () {
         userTotal = userTotal + num2;
         $('#final_score').text(userTotal);
-        if (userTotal == Random) {
+
+        if (userTotal == random) {
             winner();
         }
-        else if (userTotal > Random) {
+        else if (userTotal > random) {
             loser();
         }
     })
     $('#thumbnail_gem3').on('click', function () {
         userTotal = userTotal + num3;
         $('#final_score').text(userTotal);
-        if (userTotal == Random) {
+
+        if (userTotal == random) {
             winner();
         }
-        else if (userTotal > Random) {
+        else if (userTotal > random) {
             loser();
         }
     })
     $('#thumbnail_gem4').on('click', function () {
         userTotal = userTotal + num4;
         $('#final_score').text(userTotal);
-        if (userTotal == Random) {
+
+        if (userTotal == random) {
             winner();
         }
-        else if (userTotal > Random) {
+        else if (userTotal > random) {
             loser();
         }
     })

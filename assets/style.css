@@ -18,15 +18,14 @@
 
 #rulebox {
     background-color: pink;
-    width: 300px;
+ 
     border: 2px solid green;
-    padding: 25px;
-    margin: 25px;
+
 
 }
 #random_number{
     background-color: pink;
-    width: 300px;
+    width: 100px;
     border: 2px solid green;
     padding: 25px;
     margin: 25px;
@@ -35,7 +34,7 @@
 }
 #wins_losses {
     background-color: pink;
-    width: 300px;
+    width: 100px;
     border: 2px solid green;
     padding: 25px;
     margin: 25px;
@@ -45,7 +44,7 @@
 
 #space {
     background-color: pink;
-    width: 300px;
+    width: 100px;
     border: 2px solid green;
     padding: 25px;
     margin: 25px;
@@ -54,7 +53,7 @@
 
 #score {
     background-color: pink;
-    width: 300px;
+    width: 100px;
     border: 2px solid green;
     padding: 25px;
     margin: 25px;
@@ -63,7 +62,7 @@
 
 #space {
     background-color: pink;
-    width: 300px;
+    width: 100px;
     border: 2px solid green;
     padding: 25px;
     margin: 25px;
@@ -106,13 +105,12 @@
 }
 #gems_gallery {
     margin:5%;
+    float:right;
 }
 
 #number-guess{
     margin:5%;
-    width:10%;
-    height:30%;
-
+    
 }
 
 #wins_losses{
@@ -128,8 +126,3 @@
     margin:3%;
 }
 
-body{
-    background-image:url("../images/upfeathers.png");
-    background-size:cover;
-    
-}
