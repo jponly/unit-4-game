@@ -110,6 +110,7 @@
 
 #number-guess{
     margin:5%;
+   
     
 }
 
@@ -124,5 +125,8 @@
 }
 #rulebox{
     margin:3%;
+}
+body {
+    background: url(images/upfeathers.png);
 }
 
