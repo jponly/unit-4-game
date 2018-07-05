@@ -47,7 +47,7 @@ $(document).ready(function () {
 
     $('#thumbnail_gem1').on("click", function () {
         userTotal = userTotal + num1;
-        $('final_score').text(userTotal);
+        $('#final_score').text(userTotal);
 
         if (userTotal == random) {
             winner();
