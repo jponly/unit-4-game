@@ -33,13 +33,15 @@ $(document).ready(function () {
     }
 
     function winner() {
-        alert("you won!");
+        $( "#wins_losses" ).append( "<div>You won!</div>" );
+        // alert("you won!");
         wins++;
         $('#wins').text(wins);
         reset()
     }
     function loser() {
-        alert("you lose!");
+        $( "#wins_losses" ).append( "<div>You lost!</div>" );
+        // alert("you lose!");
         losses++;
         $('#loss').text(losses);
         reset()
@@ -49,7 +51,7 @@ $(document).ready(function () {
         userTotal = userTotal + num1;
         $('#final_score').text(userTotal);
 
-        if (userTotal == random) {
+        if (userTotal === random) {
             winner();
         }
 
@@ -62,7 +64,7 @@ $(document).ready(function () {
         userTotal = userTotal + num2;
         $('#final_score').text(userTotal);
 
-        if (userTotal == random) {
+        if (userTotal === random) {
             winner();
         }
         else if (userTotal > random) {
@@ -73,7 +75,7 @@ $(document).ready(function () {
         userTotal = userTotal + num3;
         $('#final_score').text(userTotal);
 
-        if (userTotal == random) {
+        if (userTotal === random) {
             winner();
         }
         else if (userTotal > random) {
@@ -84,7 +86,7 @@ $(document).ready(function () {
         userTotal = userTotal + num4;
         $('#final_score').text(userTotal);
 
-        if (userTotal == random) {
+        if (userTotal === random) {
             winner();
         }
         else if (userTotal > random) {
