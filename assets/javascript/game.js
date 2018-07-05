@@ -6,45 +6,48 @@ $(document).ready(function () {
 
 
     var num1 = Math.floor(Math.random() * 11 + 1)
-    var num2 = Math.floor(Math.random() * 11 + 1)
-    var num3 = Math.floor(Math.random() * 11 + 1)
-    var num4 = Math.floor(Math.random() * 11 + 1)
+    var num2 = Math.floor(Math.random() * 10 + 3)
+    var num3 = Math.floor(Math.random() * 9 + 7)
+    var num4 = Math.floor(Math.random() * 14 + 8)
 
 
     var userTotal = 0;
     var wins = 0;
     var losses = 0;
+    
 
     $('#wins').text(wins);
     $('#loss').text(losses);
 
     function reset() {
 
-        // random = Math.floor(Math.random() * 101 + 19);
+        random = Math.floor(Math.random() * 101 + 19);
         $('#randomNumber').text(random);
         num1 = Math.floor(Math.random() * 11 + 1);
-        num2 = Math.floor(Math.random() * 11 + 1);
-        num3 = Math.floor(Math.random() * 11 + 1);
-        num4 = Math.floor(Math.random() * 11 + 1);
+        num2 = Math.floor(Math.random() * 10 + 3);
+        num3 = Math.floor(Math.random() * 9 + 7);
+        num4 = Math.floor(Math.random() * 14 + 8);
 
         userTotal = 0;
         $('#final_score').text(userTotal);
+        
+        
 
     }
-
+   
     function winner() {
         // $( "#wins_losses" ).append( "<div>You won!</div>" );
-        alert("you won!");
         wins++;
         $('#wins').text(wins);
-        reset()
+        alert("you won!");
+        reset();
     }
     function loser() {
         // $( "#wins_losses" ).append( "<div>You lost!</div>" );
-        alert("you lose!");
         losses++;
         $('#loss').text(losses);
-        reset()
+        alert("you lose!");
+        reset();
     }
 
     $('#thumbnail_gem1').on("click", function () {
