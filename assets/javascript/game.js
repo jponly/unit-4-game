@@ -20,7 +20,7 @@ $(document).ready(function () {
 
     function reset() {
 
-        random = Math.floor(Math.random() * 101 + 19);
+        // random = Math.floor(Math.random() * 101 + 19);
         $('#randomNumber').text(random);
         num1 = Math.floor(Math.random() * 11 + 1);
         num2 = Math.floor(Math.random() * 11 + 1);
@@ -33,15 +33,15 @@ $(document).ready(function () {
     }
 
     function winner() {
-        $( "#wins_losses" ).append( "<div>You won!</div>" );
-        // alert("you won!");
+        // $( "#wins_losses" ).append( "<div>You won!</div>" );
+        alert("you won!");
         wins++;
         $('#wins').text(wins);
         reset()
     }
     function loser() {
-        $( "#wins_losses" ).append( "<div>You lost!</div>" );
-        // alert("you lose!");
+        // $( "#wins_losses" ).append( "<div>You lost!</div>" );
+        alert("you lose!");
         losses++;
         $('#loss').text(losses);
         reset()
