@@ -13,8 +13,8 @@
       padding-top:1%;
   }
   #gem_row{
-      margin-left:1%;
-      margin-right:1%;
+      margin-left:.5%;
+      margin-right: 57%;
   }
 #rulebox {
     background-color: pink;
@@ -82,26 +82,26 @@
     border: 2px solid green;
 }
 #gem_photo1{
-    width: 55px;
-    height: 100%;
-    border: 1px solid grey;
+    width: 35px;
+    height: 80%;
+    border: 1px solid rgb(180, 178, 178);
     
 }
 #gem_photo2{
-    width: 55px;
-    height: 55px;
-    border: 1px solid grey;
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgb(180, 178, 178);
 }
 #gem_photo3{
-    width: 55px;
-    height: 55px;
-    border: 1px solid grey;
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgb(180, 178, 178);
     
 }
 #gem_photo4{
-    width: 55px;
-    height: 55px;
-    border: 1px solid grey;
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgb(180, 178, 178);
     
 }
 
