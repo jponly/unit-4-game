@@ -1,5 +1,5 @@
 $(document).ready(function () {
-// this code should run now//
+
     var random = Math.floor(Math.random() * 101 + 19)
 
     $('#random_number').text(random);
