@@ -22,7 +22,7 @@ $(document).ready(function () {
     function reset() {
 
         random = Math.floor(Math.random() * 101 + 19);
-        $('#randomNumber').text(random);
+        $('#random_number').text(random);
         num1 = Math.floor(Math.random() * 11 + 1);
         num2 = Math.floor(Math.random() * 10 + 3);
         num3 = Math.floor(Math.random() * 9 + 7);
