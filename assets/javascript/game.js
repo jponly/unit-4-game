@@ -40,14 +40,14 @@ $(document).ready(function () {
         wins++;
         $('#wins').text(wins);
         reset();
-        // alert("you won!");
+        
     }
     function loser() {
         $( "#game_outcome" ).html( "<div>You lost!</div>" );
         losses++;
         $('#loss').text(losses);
         reset();
-    //     alert("you lose!");
+    
      }
 
     $('#thumbnail_gem1').on("click", function () {
@@ -96,20 +96,5 @@ $(document).ready(function () {
             loser();
         }
     })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 });
