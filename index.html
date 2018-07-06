@@ -15,12 +15,6 @@
     <script src="assets/javascript/game.js"></script>
 </head>
 
-<!-- NOT COMPLETED YET!!! Needs the JQUERY to be interactive and run like the demo.
-    Needs styling to look like a playable game. Working on making the gems clickable 
-    and able to send the right data to each div and to calculate wins/losses and reset the game. 
-    Will complete ASAP. -->
-
-
 <body>
 
     <div class="container-fluid">
@@ -50,14 +44,13 @@
             </div>
 
             <div id="score" class="col-2 box_size">
-                <span>My Guess Points:</span>
+                <span> Crystal Points:</span>
                 <h6 id="final_score"></h6>
             </div>
             <div id="wins_losses" class="col-2 box_size">
-                <span>wins:</span>
-                <h6 id="wins"></h6>
-                <span>losses:</span>
-                <h6 id="loss"></h6>
+                <h6>Wins: <span id="wins"></span></h6>
+                <h6>Loss: <span id="loss"></span></h6>
+                <div id="game_outcome"></div>
             </div>
             <div class="col-6">
 
@@ -102,17 +95,13 @@
                 </div>
             </div>
 
-            </div>
         </div>
+    </div>
 
-        <br>
-        <br>
-        <br>
+    <br>
+    <br>
+    <br>
 </body>
 
 </html>
 
-<!-- <div class="row">
-    <div id="space" class="col-4">
-        <h5>your score is: 0</h5>
-    </div> -->

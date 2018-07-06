@@ -16,9 +16,6 @@
       margin-left:1%;
       margin-right:1%;
   }
-
-   
-
 #rulebox {
     background-color: pink;
     border: 2px solid green;
@@ -37,9 +34,10 @@
     background-color: pink;
     border: 2px solid green;
     height: 100%;
-    padding-top:20%;
+    padding-top:8%;
     margin-left: 2%;
     width: 106%;
+    font-size:200%;
    
 }
 
@@ -82,12 +80,7 @@
     background-color: pink;
     
     border: 2px solid green;
-    
-
 }
-
-
-
 #gem_photo1{
     width: 55px;
     height: 100%;
@@ -145,21 +138,5 @@ body {
 
 
  
-/* #wins_losses{
-    
-}
-#space{
-   
-}
-#score{
-    
-}
-#rulebox{
-   
-}
-
-#gemBox {
-    
-} */
 
 

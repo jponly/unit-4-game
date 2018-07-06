@@ -14,7 +14,7 @@ $(document).ready(function () {
     var userTotal = 0;
     var wins = 0;
     var losses = 0;
-    
+
 
     $('#wins').text(wins);
     $('#loss').text(losses);
@@ -30,25 +30,25 @@ $(document).ready(function () {
 
         userTotal = 0;
         $('#final_score').text(userTotal);
-        
-        
+
+
 
     }
-   
+
     function winner() {
-        // $( "#wins_losses" ).append( "<div>You won!</div>" );
+           $( "#game_outcome" ).html( "<div>You won!</div>" );
         wins++;
         $('#wins').text(wins);
-        alert("you won!");
         reset();
+        // alert("you won!");
     }
     function loser() {
-        // $( "#wins_losses" ).append( "<div>You lost!</div>" );
+        $( "#game_outcome" ).html( "<div>You lost!</div>" );
         losses++;
         $('#loss').text(losses);
-        alert("you lose!");
         reset();
-    }
+    //     alert("you lose!");
+     }
 
     $('#thumbnail_gem1').on("click", function () {
         userTotal = userTotal + num1;
@@ -96,7 +96,7 @@ $(document).ready(function () {
             loser();
         }
     })
-    
+
 
 
 
